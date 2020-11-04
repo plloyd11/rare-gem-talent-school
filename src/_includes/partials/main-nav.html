@@ -1,0 +1,106 @@
+<header x-data="{ open: false }" role="banner" class="relative z-50 bg-white shadow">
+    <div class="flex items-center justify-between px-4 py-4 mx-auto max-w-7xl sm:px-6">
+        <div class="flex items-center">
+            <a href="#" class="flex mr-8">
+                <img class="w-auto h-16 sm:h-20" src="/img/logo.svg" alt="Rare Gem Talent School" />
+            </a>
+            <nav class="hidden md:flex" aria-label="Primary Navigation">
+                <div class="flex items-center space-x-6">
+                    {% for item in navigation.items %}
+                    <a
+                        href="{{ item.url }}"
+                        class="inline-flex items-center space-x-2 text-lg leading-6 transition duration-150 ease-in-out text-bodyCopyDark group hover:text-gray-900 focus:text-gray-900"
+                        >{{ item.text }}</a
+                    >
+                    {% endfor %}
+                </div>
+            </nav>
+        </div>
+        <div class="md:hidden">
+            <button
+                @click="open = true"
+                type="button"
+                class="inline-flex items-center justify-center p-2 transition duration-150 ease-in-out rounded-md text-headerDark hover:text-bodyCopyDark hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-bodyCopyDark"
+            >
+                <svg
+                    class="w-6 h-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <div class="hidden md:block">
+            <a
+                target="_blank"
+                rel="noopener"
+                class="px-12 py-4 bg-primaryColor"
+                href="https://www.globalgiving.org/projects/helpt-return-to-school-for-children-with-dyslexia/"
+            >
+                DONATE
+            </a>
+        </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div
+        x-show="open"
+        x-transition:enter="duration-300 ease-out"
+        x-transition:enter-start="opacity-0 scale-95"
+        x-transition:enter-end="opacity-100 scale-100"
+        x-transition:leave="duration-200 ease-in"
+        x-transition:leave-start="opacity-100 scale-100"
+        x-transition:leave-end="opacity-0 scale-95"
+        @click.away="open = false"
+        class="absolute inset-x-0 top-0 p-2 transition origin-top-right transform"
+    >
+        <div class="rounded-lg shadow-lg">
+            <div class="bg-white divide-y-2 rounded-lg shadow-xs divide-gray-50">
+                <div class="px-5 pt-5 pb-6 space-y-6">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <img class="w-auto h-10" src="/img/logo.svg" alt="Rare Gem Talent School" />
+                        </div>
+                        <div class="-mr-2">
+                            <button
+                                @click="open = false"
+                                type="button"
+                                class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-bodyCopyDark hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-bodyCopyDark"
+                            >
+                                <!-- Heroicon name: x -->
+                                <svg
+                                    class="w-6 h-6"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <nav class="grid grid-cols-1 gap-7">
+                            {% for item in navigation.items %}
+                            <a
+                                href="{{ item.url }}"
+                                class="inline-flex items-center space-x-2 text-base leading-6 transition duration-150 ease-in-out text-bodyCopyDark group hover:text-gray-900 focus:text-gray-900"
+                                >{{ item.text }}</a
+                            >
+                            {% endfor %}
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

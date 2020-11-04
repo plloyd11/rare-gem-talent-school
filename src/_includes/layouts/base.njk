@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>{{ title }}</title>
+        <meta name="description" content="Build an extraordinary yoga or wellness business | Rare Gem Talent School">
+        <link rel="icon" href="/img/favicon.svg" />
+
+        <meta property="og:title" content="Rare Gem Talent School">
+        <meta property="og:description" content="Build an extraordinary yoga or wellness business">
+        {# <meta property="og:image" content="https://nicoledandreaconsulting.com/img/homepage-hero.jpg">
+        <meta property="og:url" content="https://nicoledandreaconsulting.com/"> #}
+
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/styles.css"/>
+        <link rel="stylesheet" href="/css/custom.css"/>
+
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.min.js" defer="defer"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-C2MVCQTW9V"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-C2MVCQTW9V');
+        </script>
+
+    </head>
+    <body>
+        {% include "partials/main-nav.html" %}
+        <main tabindex="-1" id="main-content">
+            {% block content %}{% endblock %}
+        </main>
+        {% include "partials/footer.html" %}
+    </body>
+</html>

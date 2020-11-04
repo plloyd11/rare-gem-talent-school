@@ -1,0 +1,20 @@
+{
+    "items": [
+        {
+            "text": "Main Goal",
+            "url": "#services"
+        },
+        {
+            "text": "Mission",
+            "url": "#about"
+        },
+        {
+            "text": "Gallery",
+            "url": "#testimonials"
+        },
+        {
+            "text": "Contact Us",
+            "url": "#freebies"
+        }
+    ]
+}

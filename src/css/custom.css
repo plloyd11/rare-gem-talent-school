@@ -1,0 +1,55 @@
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+p,
+li,
+a,
+small,
+ul {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.darkTextOnPrimary {
+    color: hsl(340deg 32% 12%);
+}
+
+.dash-trail:after {
+    background: #af7d8e;
+    display: block;
+    content: '';
+    height: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 40px;
+}
+
+.script-font {
+    font-family: neonoir, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#about-photo {
+    object-position: 0 calc(100% + 260px);
+}
+
+@media (min-width: 768px) {
+    #about-photo {
+        object-position: initial;
+    }
+}
