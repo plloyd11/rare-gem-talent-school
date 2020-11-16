@@ -2,19 +2,19 @@
     "items": [
         {
             "text": "Main Goal",
-            "url": "#services"
+            "url": "#mainGoal"
         },
         {
             "text": "Mission",
-            "url": "#about"
+            "url": "#mission"
         },
         {
             "text": "Gallery",
-            "url": "#testimonials"
+            "url": "#gallery"
         },
         {
             "text": "Contact Us",
-            "url": "#freebies"
+            "url": "#contact"
         }
     ]
 }

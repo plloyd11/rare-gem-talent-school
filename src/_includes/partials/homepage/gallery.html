@@ -1,0 +1,78 @@
+<div id="gallery" class="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8" x-data="{ image: 'image2' }">
+    <p class="font-semibold leading-6 tracking-wide uppercase text-secondaryColorDark">
+        Our Gallery
+    </p>
+    <h1 class="mt-2 mb-8 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+        Check out what's happening at the school
+    </h1>
+    <div class="grid grid-cols-2 gap-4">
+        <div>
+            <img src="img/gallery/gallery-2.jpg" alt="Students at the Rare Gem Talent School" x-show="image === 'image2'">
+            <img src="img/gallery/gallery-3.jpg" alt="Students at the Rare Gem Talent School" x-show="image === 'image3'">
+            <img src="img/gallery/gallery-5.jpg" alt="Students at the Rare Gem Talent School" x-show="image === 'image5'">
+            <img src="img/gallery/gallery-6.jpg" alt="Students at the Rare Gem Talent School" x-show="image === 'image6'">
+            <img src="img/gallery/gallery-8.jpg" alt="Students at the Rare Gem Talent School" x-show="image === 'image8'">
+            <img src="img/gallery/gallery-9.jpg" alt="Students at the Rare Gem Talent School" x-show="image === 'image9'">
+            <img src="img/gallery/gallery-10.jpg" alt="Students at the Rare Gem Talent School" x-show="image === 'image10'">
+            <img src="img/gallery/gallery-11.jpg" alt="Students at the Rare Gem Talent School" x-show="image === 'image11'">
+            <img src="img/gallery/gallery-12.jpg" alt="Students at the Rare Gem Talent School" x-show="image === 'image12'">
+            <img src="img/gallery/gallery-13.jpg" alt="Students at the Rare Gem Talent School" x-show="image === 'image13'">
+            <img src="img/gallery/gallery-14.jpg" alt="Students at the Rare Gem Talent School" x-show="image === 'image14'">
+            <img src="img/gallery/gallery-15.jpg" alt="Students at the Rare Gem Talent School" x-show="image === 'image15'">
+            <img src="img/gallery/gallery-16.jpg" alt="Students at the Rare Gem Talent School" x-show="image === 'image16'">
+            <img src="img/gallery/gallery-18.jpg" alt="Students at the Rare Gem Talent School" x-show="image === 'image18'">
+            <img src="img/gallery/gallery-20.jpg" alt="Students at the Rare Gem Talent School" x-show="image === 'image20'">
+            <img src="img/gallery/gallery-21.jpg" alt="Students at the Rare Gem Talent School" x-show="image === 'image21'">
+        </div>
+        <div class="grid grid-cols-4 gap-2">
+            <a href="#" class=""
+                :class="{ 'border-blue-500' : image === 'image2' }" @click.prevent="image = 'image2'"><img
+                    src="img/gallery/gallery-2.jpg" alt="Students at the Rare Gem Talent School"></a>
+            <a href="#" class=""
+                :class="{ 'border-blue-500' : image === 'image3' }" @click.prevent="image = 'image3'"><img
+                    src="img/gallery/gallery-3.jpg" alt="Students at the Rare Gem Talent School"></a>
+            <a href="#" class=""
+                :class="{ 'border-blue-500' : image === 'image3' }" @click.prevent="image = 'image5'"><img
+                    src="img/gallery/gallery-5.jpg" alt="Students at the Rare Gem Talent School"></a>
+            <a href="#" class=""
+                :class="{ 'border-blue-500' : image === 'image3' }" @click.prevent="image = 'image6'"><img
+                    src="img/gallery/gallery-6.jpg" alt="Students at the Rare Gem Talent School"></a>
+            <a href="#" class=""
+                :class="{ 'border-blue-500' : image === 'image3' }" @click.prevent="image = 'image8'"><img
+                    src="img/gallery/gallery-8.jpg" alt="Students at the Rare Gem Talent School"></a>
+            <a href="#" class=""
+                :class="{ 'border-blue-500' : image === 'image3' }" @click.prevent="image = 'image9'"><img
+                    src="img/gallery/gallery-9.jpg" alt="Students at the Rare Gem Talent School"></a>
+            <a href="#" class=""
+                :class="{ 'border-blue-500' : image === 'image3' }" @click.prevent="image = 'image10'"><img
+                    src="img/gallery/gallery-10.jpg" alt="Students at the Rare Gem Talent School"></a>
+            <a href="#" class=""
+                :class="{ 'border-blue-500' : image === 'image3' }" @click.prevent="image = 'image11'"><img
+                    src="img/gallery/gallery-11.jpg" alt="Students at the Rare Gem Talent School"></a>
+            <a href="#" class=""
+                :class="{ 'border-blue-500' : image === 'image3' }" @click.prevent="image = 'image12'"><img
+                    src="img/gallery/gallery-12.jpg" alt="Students at the Rare Gem Talent School"></a>
+            <a href="#" class=""
+                :class="{ 'border-blue-500' : image === 'image3' }" @click.prevent="image = 'image13'"><img
+                    src="img/gallery/gallery-13.jpg" alt="Students at the Rare Gem Talent School"></a>
+            <a href="#" class=""
+                :class="{ 'border-blue-500' : image === 'image3' }" @click.prevent="image = 'image14'"><img
+                    src="img/gallery/gallery-14.jpg" alt="Students at the Rare Gem Talent School"></a>
+            <a href="#" class=""
+                :class="{ 'border-blue-500' : image === 'image3' }" @click.prevent="image = 'image15'"><img
+                    src="img/gallery/gallery-15.jpg" alt="Students at the Rare Gem Talent School"></a>
+            <a href="#" class=""
+                :class="{ 'border-blue-500' : image === 'image3' }" @click.prevent="image = 'image16'"><img
+                    src="img/gallery/gallery-16.jpg" alt="Students at the Rare Gem Talent School"></a>
+            <a href="#" class=""
+                :class="{ 'border-blue-500' : image === 'image18' }" @click.prevent="image = 'image18'"><img
+                    src="img/gallery/gallery-18.jpg" alt="Students at the Rare Gem Talent School"></a>
+            <a href="#" class=""
+                :class="{ 'border-blue-500' : image === 'image20' }" @click.prevent="image = 'image20'"><img
+                    src="img/gallery/gallery-20.jpg" alt="Students at the Rare Gem Talent School"></a>
+            <a href="#" class=""
+                :class="{ 'border-blue-500' : image === 'image21' }" @click.prevent="image = 'image21'"><img
+                    src="img/gallery/gallery-21.jpg" alt="Students at the Rare Gem Talent School"></a>
+        </div>
+    </div>
+</div>
